@@ -5,18 +5,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App(){
 
-  return(
+    return(
     <div>
-      <Header />
-      <ItemListContainer mensaje="Hola Mundo"/>
-      
+        <Header />
+        <ItemListContainer mensaje="Hola Mundo"/>
 
-    
     
     </div>
 
 
-  )
+)
 
 }
 

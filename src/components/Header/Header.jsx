@@ -1,5 +1,6 @@
 import './Header.scss'
 import logo from '../../assets/logo.png'
+import CarWidget from "../CarWidget/CarWidget"
 
 
 const Header = () => {
@@ -7,17 +8,20 @@ const Header = () => {
     return(
         <header className="header">
             <div className="header__container">
+                <div className='header__nav'>
+                <img className='header__logo' src={logo} alt="logo" />
+                <a className="header__link">KeebMx</a>
+                </div>
                 
-                <img className='header__logo' src={logo} alt="logo"  />
-
                 <nav className="header__nav">
                     <a className="header__link" href="#">Home</a>
                     <a className="header__link" href="#">Catalogo</a>
                     <a className="header__link" href="#">About</a>
                     <a className="header__link" href="#">Contact</a>
-                    <i class="bi bi-cart"></i>
 
+                    <CarWidget />
                 </nav>
+
             </div>
         </header>
     )
